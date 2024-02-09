@@ -1,0 +1,791 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7B7F04FF2B0A9DF100657D6C /* GeoAppAccessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7F04FE2B0A9DF100657D6C /* GeoAppAccessService.swift */; };
+		7B7F05022B0AA85100657D6C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 7B7F05012B0AA85100657D6C /* FirebaseFirestore */; };
+		7B7F05042B0AA85100657D6C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B7F05032B0AA85100657D6C /* FirebaseFirestoreSwift */; };
+		7B7F05072B0AAE4D00657D6C /* GeoAppRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7F05062B0AAE4D00657D6C /* GeoAppRepository.swift */; };
+		7B7F05092B0AB5C400657D6C /* SubstateInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7F05082B0AB5C400657D6C /* SubstateInfo.swift */; };
+		7B7F050C2B0AD24B00657D6C /* SubstatesCRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B7F050B2B0AD24B00657D6C /* SubstatesCRUD.swift */; };
+		7B868E552ADDC2FB008C7B1F /* QuizContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B868E542ADDC2FB008C7B1F /* QuizContentView.swift */; };
+		7B868E5F2ADE120E008C7B1F /* GeoAppViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B868E5E2ADE120E008C7B1F /* GeoAppViewModel.swift */; };
+		7B868E612AE0A201008C7B1F /* CountryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B868E602AE0A201008C7B1F /* CountryDetailsView.swift */; };
+		7B868E632AE185B6008C7B1F /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B868E622AE185B6008C7B1F /* Countries.swift */; };
+		7B8691DF2ADD7F8D00E257B0 /* CountryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8691DE2ADD7F8D00E257B0 /* CountryCard.swift */; };
+		7B9DFBF12B0FDC1200896D2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B9DFBF02B0FDC1200896D2B /* GoogleService-Info.plist */; };
+		7B9DFBF42B0FFDC800896D2B /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DFBF32B0FFDC800896D2B /* Helpers.swift */; };
+		7B9DFBF92B101EFF00896D2B /* CountryDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9DFBF82B101EFE00896D2B /* CountryDataProvider.swift */; };
+		7BA0A05B2ACB5188007A949D /* GeoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A05A2ACB5188007A949D /* GeoAppApp.swift */; };
+		7BA0A05D2ACB5188007A949D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A05C2ACB5188007A949D /* ContentView.swift */; };
+		7BA0A05F2ACB5189007A949D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA0A05E2ACB5189007A949D /* Assets.xcassets */; };
+		7BA0A0622ACB5189007A949D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA0A0612ACB5189007A949D /* Preview Assets.xcassets */; };
+		7BA0A06C2ACB518A007A949D /* GeoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A06B2ACB518A007A949D /* GeoAppTests.swift */; };
+		7BA0A0762ACB518A007A949D /* GeoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A0752ACB518A007A949D /* GeoAppUITests.swift */; };
+		7BA0A0782ACB518A007A949D /* GeoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A0772ACB518A007A949D /* GeoAppUITestsLaunchTests.swift */; };
+		7BA0A0882ACB53C2007A949D /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A0872ACB53C2007A949D /* LabelView.swift */; };
+		7BA0A08C2ACF4EE5007A949D /* CountriesApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A08B2ACF4EE5007A949D /* CountriesApi.swift */; };
+		7BA0A0972ACF6232007A949D /* QuizHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A0962ACF6232007A949D /* QuizHome.swift */; };
+		7BA0A09D2ACF63F7007A949D /* QuizResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA0A09C2ACF63F7007A949D /* QuizResult.swift */; };
+		7BD3F50E2B193232007ED1E7 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F50D2B193232007ED1E7 /* Question.swift */; };
+		7BD3F5102B19329C007ED1E7 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F50F2B19329C007ED1E7 /* QuestionView.swift */; };
+		7BD3F5122B1AC90E007ED1E7 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F5112B1AC90E007ED1E7 /* Result.swift */; };
+		7BD3F5142B1B0349007ED1E7 /* QuizAnswerSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD3F5132B1B0349007ED1E7 /* QuizAnswerSheet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BA0A0682ACB518A007A949D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BA0A04F2ACB5188007A949D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA0A0562ACB5188007A949D;
+			remoteInfo = GeoApp;
+		};
+		7BA0A0722ACB518A007A949D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BA0A04F2ACB5188007A949D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA0A0562ACB5188007A949D;
+			remoteInfo = GeoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7B7F04FE2B0A9DF100657D6C /* GeoAppAccessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAppAccessService.swift; sourceTree = "<group>"; };
+		7B7F05062B0AAE4D00657D6C /* GeoAppRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAppRepository.swift; sourceTree = "<group>"; };
+		7B7F05082B0AB5C400657D6C /* SubstateInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstateInfo.swift; sourceTree = "<group>"; };
+		7B7F050B2B0AD24B00657D6C /* SubstatesCRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubstatesCRUD.swift; sourceTree = "<group>"; };
+		7B868E542ADDC2FB008C7B1F /* QuizContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizContentView.swift; sourceTree = "<group>"; };
+		7B868E5E2ADE120E008C7B1F /* GeoAppViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAppViewModel.swift; sourceTree = "<group>"; };
+		7B868E602AE0A201008C7B1F /* CountryDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsView.swift; sourceTree = "<group>"; };
+		7B868E622AE185B6008C7B1F /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		7B8691DE2ADD7F8D00E257B0 /* CountryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCard.swift; sourceTree = "<group>"; };
+		7B9DFBF02B0FDC1200896D2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7B9DFBF32B0FFDC800896D2B /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		7B9DFBF82B101EFE00896D2B /* CountryDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataProvider.swift; sourceTree = "<group>"; };
+		7BA0A0572ACB5188007A949D /* GeoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA0A05A2ACB5188007A949D /* GeoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAppApp.swift; sourceTree = "<group>"; };
+		7BA0A05C2ACB5188007A949D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BA0A05E2ACB5189007A949D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BA0A0612ACB5189007A949D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7BA0A0672ACB518A007A949D /* GeoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA0A06B2ACB518A007A949D /* GeoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAppTests.swift; sourceTree = "<group>"; };
+		7BA0A0712ACB518A007A949D /* GeoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA0A0752ACB518A007A949D /* GeoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAppUITests.swift; sourceTree = "<group>"; };
+		7BA0A0772ACB518A007A949D /* GeoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7BA0A0872ACB53C2007A949D /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		7BA0A08B2ACF4EE5007A949D /* CountriesApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesApi.swift; sourceTree = "<group>"; };
+		7BA0A0962ACF6232007A949D /* QuizHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHome.swift; sourceTree = "<group>"; };
+		7BA0A09C2ACF63F7007A949D /* QuizResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResult.swift; sourceTree = "<group>"; };
+		7BD3F50D2B193232007ED1E7 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		7BD3F50F2B19329C007ED1E7 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		7BD3F5112B1AC90E007ED1E7 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		7BD3F5132B1B0349007ED1E7 /* QuizAnswerSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizAnswerSheet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BA0A0542ACB5188007A949D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B7F05022B0AA85100657D6C /* FirebaseFirestore in Frameworks */,
+				7B7F05042B0AA85100657D6C /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA0A0642ACB518A007A949D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA0A06E2ACB518A007A949D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B7F04FD2B0A9DD500657D6C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7B7F04FE2B0A9DF100657D6C /* GeoAppAccessService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7B7F05052B0AAE2B00657D6C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				7B7F05062B0AAE4D00657D6C /* GeoAppRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7B7F050A2B0AD13500657D6C /* ProvincesViewV2 */ = {
+			isa = PBXGroup;
+			children = (
+				7B7F050B2B0AD24B00657D6C /* SubstatesCRUD.swift */,
+			);
+			path = ProvincesViewV2;
+			sourceTree = "<group>";
+		};
+		7B8691DD2ADD7E2700E257B0 /* CountryView */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0A08B2ACF4EE5007A949D /* CountriesApi.swift */,
+				7B8691DE2ADD7F8D00E257B0 /* CountryCard.swift */,
+				7B868E602AE0A201008C7B1F /* CountryDetailsView.swift */,
+			);
+			path = CountryView;
+			sourceTree = "<group>";
+		};
+		7B9DFBF22B0FFD8200896D2B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7B9DFBF32B0FFDC800896D2B /* Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		7B9DFBF52B0FFE4000896D2B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				7B9DFBF82B101EFE00896D2B /* CountryDataProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		7BA0A04E2ACB5188007A949D = {
+			isa = PBXGroup;
+			children = (
+				7BA0A0592ACB5188007A949D /* GeoApp */,
+				7BA0A06A2ACB518A007A949D /* GeoAppTests */,
+				7BA0A0742ACB518A007A949D /* GeoAppUITests */,
+				7BA0A0582ACB5188007A949D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BA0A0582ACB5188007A949D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0A0572ACB5188007A949D /* GeoApp.app */,
+				7BA0A0672ACB518A007A949D /* GeoAppTests.xctest */,
+				7BA0A0712ACB518A007A949D /* GeoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BA0A0592ACB5188007A949D /* GeoApp */ = {
+			isa = PBXGroup;
+			children = (
+				7B9DFBF52B0FFE4000896D2B /* Data */,
+				7B9DFBF22B0FFD8200896D2B /* Helpers */,
+				7B9DFBF02B0FDC1200896D2B /* GoogleService-Info.plist */,
+				7B7F05052B0AAE2B00657D6C /* Repositories */,
+				7B7F04FD2B0A9DD500657D6C /* Services */,
+				7BA0A0862ACB531D007A949D /* Views */,
+				7BA0A0852ACB5313007A949D /* Models */,
+				7BA0A0842ACB5304007A949D /* ViewModels */,
+				7BA0A05A2ACB5188007A949D /* GeoAppApp.swift */,
+				7BA0A05E2ACB5189007A949D /* Assets.xcassets */,
+				7BA0A0602ACB5189007A949D /* Preview Content */,
+			);
+			path = GeoApp;
+			sourceTree = "<group>";
+		};
+		7BA0A0602ACB5189007A949D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0A0612ACB5189007A949D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BA0A06A2ACB518A007A949D /* GeoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0A06B2ACB518A007A949D /* GeoAppTests.swift */,
+			);
+			path = GeoAppTests;
+			sourceTree = "<group>";
+		};
+		7BA0A0742ACB518A007A949D /* GeoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0A0752ACB518A007A949D /* GeoAppUITests.swift */,
+				7BA0A0772ACB518A007A949D /* GeoAppUITestsLaunchTests.swift */,
+			);
+			path = GeoAppUITests;
+			sourceTree = "<group>";
+		};
+		7BA0A0842ACB5304007A949D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7B868E5E2ADE120E008C7B1F /* GeoAppViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7BA0A0852ACB5313007A949D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7B868E622AE185B6008C7B1F /* Countries.swift */,
+				7B7F05082B0AB5C400657D6C /* SubstateInfo.swift */,
+				7BD3F50D2B193232007ED1E7 /* Question.swift */,
+				7BD3F5112B1AC90E007ED1E7 /* Result.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7BA0A0862ACB531D007A949D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0A05C2ACB5188007A949D /* ContentView.swift */,
+				7B7F050A2B0AD13500657D6C /* ProvincesViewV2 */,
+				7B8691DD2ADD7E2700E257B0 /* CountryView */,
+				7BB722492AE1B3E200863687 /* ReusableViews */,
+				7BA0A0952ACF6208007A949D /* QuizView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7BA0A0952ACF6208007A949D /* QuizView */ = {
+			isa = PBXGroup;
+			children = (
+				7B868E542ADDC2FB008C7B1F /* QuizContentView.swift */,
+				7BA0A0962ACF6232007A949D /* QuizHome.swift */,
+				7BA0A09C2ACF63F7007A949D /* QuizResult.swift */,
+				7BD3F50F2B19329C007ED1E7 /* QuestionView.swift */,
+				7BD3F5132B1B0349007ED1E7 /* QuizAnswerSheet.swift */,
+			);
+			path = QuizView;
+			sourceTree = "<group>";
+		};
+		7BB722492AE1B3E200863687 /* ReusableViews */ = {
+			isa = PBXGroup;
+			children = (
+				7BA0A0872ACB53C2007A949D /* LabelView.swift */,
+			);
+			path = ReusableViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BA0A0562ACB5188007A949D /* GeoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA0A07B2ACB518A007A949D /* Build configuration list for PBXNativeTarget "GeoApp" */;
+			buildPhases = (
+				7BA0A0532ACB5188007A949D /* Sources */,
+				7BA0A0542ACB5188007A949D /* Frameworks */,
+				7BA0A0552ACB5188007A949D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoApp;
+			packageProductDependencies = (
+				7B7F05012B0AA85100657D6C /* FirebaseFirestore */,
+				7B7F05032B0AA85100657D6C /* FirebaseFirestoreSwift */,
+			);
+			productName = GeoApp;
+			productReference = 7BA0A0572ACB5188007A949D /* GeoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BA0A0662ACB518A007A949D /* GeoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA0A07E2ACB518A007A949D /* Build configuration list for PBXNativeTarget "GeoAppTests" */;
+			buildPhases = (
+				7BA0A0632ACB518A007A949D /* Sources */,
+				7BA0A0642ACB518A007A949D /* Frameworks */,
+				7BA0A0652ACB518A007A949D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BA0A0692ACB518A007A949D /* PBXTargetDependency */,
+			);
+			name = GeoAppTests;
+			productName = GeoAppTests;
+			productReference = 7BA0A0672ACB518A007A949D /* GeoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BA0A0702ACB518A007A949D /* GeoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA0A0812ACB518A007A949D /* Build configuration list for PBXNativeTarget "GeoAppUITests" */;
+			buildPhases = (
+				7BA0A06D2ACB518A007A949D /* Sources */,
+				7BA0A06E2ACB518A007A949D /* Frameworks */,
+				7BA0A06F2ACB518A007A949D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BA0A0732ACB518A007A949D /* PBXTargetDependency */,
+			);
+			name = GeoAppUITests;
+			productName = GeoAppUITests;
+			productReference = 7BA0A0712ACB518A007A949D /* GeoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BA0A04F2ACB5188007A949D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7BA0A0562ACB5188007A949D = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					7BA0A0662ACB518A007A949D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7BA0A0562ACB5188007A949D;
+					};
+					7BA0A0702ACB518A007A949D = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 7BA0A0562ACB5188007A949D;
+					};
+				};
+			};
+			buildConfigurationList = 7BA0A0522ACB5188007A949D /* Build configuration list for PBXProject "GeoApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BA0A04E2ACB5188007A949D;
+			packageReferences = (
+				7B7F05002B0AA85100657D6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 7BA0A0582ACB5188007A949D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BA0A0562ACB5188007A949D /* GeoApp */,
+				7BA0A0662ACB518A007A949D /* GeoAppTests */,
+				7BA0A0702ACB518A007A949D /* GeoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BA0A0552ACB5188007A949D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA0A0622ACB5189007A949D /* Preview Assets.xcassets in Resources */,
+				7B9DFBF12B0FDC1200896D2B /* GoogleService-Info.plist in Resources */,
+				7BA0A05F2ACB5189007A949D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA0A0652ACB518A007A949D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA0A06F2ACB518A007A949D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BA0A0532ACB5188007A949D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD3F50E2B193232007ED1E7 /* Question.swift in Sources */,
+				7B9DFBF42B0FFDC800896D2B /* Helpers.swift in Sources */,
+				7BA0A05D2ACB5188007A949D /* ContentView.swift in Sources */,
+				7BD3F5102B19329C007ED1E7 /* QuestionView.swift in Sources */,
+				7B7F05072B0AAE4D00657D6C /* GeoAppRepository.swift in Sources */,
+				7B7F050C2B0AD24B00657D6C /* SubstatesCRUD.swift in Sources */,
+				7B868E632AE185B6008C7B1F /* Countries.swift in Sources */,
+				7BA0A09D2ACF63F7007A949D /* QuizResult.swift in Sources */,
+				7B9DFBF92B101EFF00896D2B /* CountryDataProvider.swift in Sources */,
+				7B8691DF2ADD7F8D00E257B0 /* CountryCard.swift in Sources */,
+				7BA0A08C2ACF4EE5007A949D /* CountriesApi.swift in Sources */,
+				7B868E5F2ADE120E008C7B1F /* GeoAppViewModel.swift in Sources */,
+				7B7F04FF2B0A9DF100657D6C /* GeoAppAccessService.swift in Sources */,
+				7B868E612AE0A201008C7B1F /* CountryDetailsView.swift in Sources */,
+				7B7F05092B0AB5C400657D6C /* SubstateInfo.swift in Sources */,
+				7B868E552ADDC2FB008C7B1F /* QuizContentView.swift in Sources */,
+				7BA0A05B2ACB5188007A949D /* GeoAppApp.swift in Sources */,
+				7BD3F5122B1AC90E007ED1E7 /* Result.swift in Sources */,
+				7BD3F5142B1B0349007ED1E7 /* QuizAnswerSheet.swift in Sources */,
+				7BA0A0882ACB53C2007A949D /* LabelView.swift in Sources */,
+				7BA0A0972ACF6232007A949D /* QuizHome.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA0A0632ACB518A007A949D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA0A06C2ACB518A007A949D /* GeoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA0A06D2ACB518A007A949D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA0A0782ACB518A007A949D /* GeoAppUITestsLaunchTests.swift in Sources */,
+				7BA0A0762ACB518A007A949D /* GeoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BA0A0692ACB518A007A949D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BA0A0562ACB5188007A949D /* GeoApp */;
+			targetProxy = 7BA0A0682ACB518A007A949D /* PBXContainerItemProxy */;
+		};
+		7BA0A0732ACB518A007A949D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BA0A0562ACB5188007A949D /* GeoApp */;
+			targetProxy = 7BA0A0722ACB518A007A949D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7BA0A0792ACB518A007A949D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BA0A07A2ACB518A007A949D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BA0A07C2ACB518A007A949D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GeoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UBGGVBDRF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.james.GeoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BA0A07D2ACB518A007A949D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GeoApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UBGGVBDRF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.james.GeoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BA0A07F2ACB518A007A949D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4UBGGVBDRF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.james.GeoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeoApp";
+			};
+			name = Debug;
+		};
+		7BA0A0802ACB518A007A949D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4UBGGVBDRF;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.james.GeoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GeoApp";
+			};
+			name = Release;
+		};
+		7BA0A0822ACB518A007A949D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4UBGGVBDRF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.james.GeoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoApp;
+			};
+			name = Debug;
+		};
+		7BA0A0832ACB518A007A949D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4UBGGVBDRF;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.james.GeoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BA0A0522ACB5188007A949D /* Build configuration list for PBXProject "GeoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA0A0792ACB518A007A949D /* Debug */,
+				7BA0A07A2ACB518A007A949D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA0A07B2ACB518A007A949D /* Build configuration list for PBXNativeTarget "GeoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA0A07C2ACB518A007A949D /* Debug */,
+				7BA0A07D2ACB518A007A949D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA0A07E2ACB518A007A949D /* Build configuration list for PBXNativeTarget "GeoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA0A07F2ACB518A007A949D /* Debug */,
+				7BA0A0802ACB518A007A949D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA0A0812ACB518A007A949D /* Build configuration list for PBXNativeTarget "GeoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA0A0822ACB518A007A949D /* Debug */,
+				7BA0A0832ACB518A007A949D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7B7F05002B0AA85100657D6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.18.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7B7F05012B0AA85100657D6C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B7F05002B0AA85100657D6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		7B7F05032B0AA85100657D6C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7B7F05002B0AA85100657D6C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7BA0A04F2ACB5188007A949D /* Project object */;
+}
